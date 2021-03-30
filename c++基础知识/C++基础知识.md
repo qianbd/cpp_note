@@ -1,22 +1,3 @@
-
-Header: Strict-Transport-Security=max-age=31536000; includeSubdomains; preload
-Header: Content-Security-Policy=default-src 'none'
-Header: Date=Tue, 30 Mar 2021 17:01:59 GMT
-Header: X-Ratelimit-Limit=60
-Header: X-Ratelimit-Used=4
-Header: X-Github-Request-Id=1A49:83D9:C588F2:D0923C:60635985
-Header: Server=GitHub.com
-Header: X-Ratelimit-Remaining=56
-Header: Access-Control-Expose-Headers=ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
-Header: Vary=Accept-Encoding, Accept, X-Requested-With
-Header: X-Ratelimit-Reset=1617126818
-Header: X-Xss-Protection=0
-Header: Referrer-Policy=origin-when-cross-origin, strict-origin-when-cross-origin
-Header: X-Frame-Options=deny
-Header: X-Content-Type-Options=nosniff
-Header: Content-Type=text/html;charset=utf-8
-Header: X-Commonmarker-Version=0.21.0
-Header: Access-Control-Allow-Origin=*
 * [内存分区模型](#内存分区模型)
 * [new操作符](#new操作符)
 * [引用](#引用)
