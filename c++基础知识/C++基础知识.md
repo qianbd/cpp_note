@@ -1,3 +1,66 @@
+
+Header: Strict-Transport-Security=max-age=31536000; includeSubdomains; preload
+Header: Content-Security-Policy=default-src 'none'
+Header: Date=Tue, 30 Mar 2021 17:01:59 GMT
+Header: X-Ratelimit-Limit=60
+Header: X-Ratelimit-Used=4
+Header: X-Github-Request-Id=1A49:83D9:C588F2:D0923C:60635985
+Header: Server=GitHub.com
+Header: X-Ratelimit-Remaining=56
+Header: Access-Control-Expose-Headers=ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+Header: Vary=Accept-Encoding, Accept, X-Requested-With
+Header: X-Ratelimit-Reset=1617126818
+Header: X-Xss-Protection=0
+Header: Referrer-Policy=origin-when-cross-origin, strict-origin-when-cross-origin
+Header: X-Frame-Options=deny
+Header: X-Content-Type-Options=nosniff
+Header: Content-Type=text/html;charset=utf-8
+Header: X-Commonmarker-Version=0.21.0
+Header: Access-Control-Allow-Origin=*
+* [内存分区模型](#内存分区模型)
+* [new操作符](#new操作符)
+* [引用](#引用)
+  * [引用做变量参数](#引用做变量参数)
+  * [引用做函数参数](#引用做函数参数)
+  * [基本语法](#基本语法)
+  * [注意事项](#注意事项)
+* [类和对象](#类和对象)
+  * [封装](#封装)
+    * [属性和行为作用](#属性和行为作用)
+    * [访问权限](#访问权限)
+    * [struct和class区别](#struct和class区别)
+    * [成员属性设置为私有](#成员属性设置为私有)
+  * [对象特性](#对象特性)
+    * [构造函数和析构函数](#构造函数和析构函数)
+    * [构造函数的分类及调用](#构造函数的分类及调用)
+    * [拷贝构造函数调用的时机](#拷贝构造函数调用的时机)
+    * [静态成员函数](#静态成员函数)
+    * [this指针](#this指针)
+  * [友元](#友元)
+  * [运算符重载](#运算符重载)
+    * [加号运算符 \+](#加号运算符-)
+    * [左移运算符 &lt;&lt;](#左移运算符-)
+    * [赋值运算符重载](#赋值运算符重载)
+    * [关系运算符重载](#关系运算符重载)
+  * [继承](#继承)
+    * [继承的基本语法](#继承的基本语法)
+    * [继承方式](#继承方式)
+    * [继承中构造和析构顺序](#继承中构造和析构顺序)
+    * [继承同名成员处理方式](#继承同名成员处理方式)
+    * [继承同名静态成员处理方式](#继承同名静态成员处理方式)
+    * [多继承语法](#多继承语法)
+    * [菱形继承](#菱形继承)
+  * [多态](#多态)
+    * [多态的基本概念](#多态的基本概念)
+    * [多态案例一计算器类](#多态案例一计算器类)
+    * [纯虚函数和抽象类](#纯虚函数和抽象类)
+    * [多态案例二\-制作饮品](#多态案例二-制作饮品)
+    * [虚析构和纯虚析构](#虚析构和纯虚析构)
+    * [多态案例三\-电脑组装](#多态案例三-电脑组装)
+* [洗牌算法：](#洗牌算法)
+* [构造函数可以是虚函数吗，为什么](#构造函数可以是虚函数吗为什么)
+
+
 ## 内存分区模型
 + 代码区：存放函数体的二进制代码，有操作系统进行管理
 + 全局区：存放全局变量和静态变量以及常量
